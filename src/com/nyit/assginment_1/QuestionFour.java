@@ -14,6 +14,7 @@ public class QuestionFour {
             for (String s : team) {
                 System.out.print(s + "/");
             }
+            System.out.print(":::" );
             String common = qf.divideUtil(0, team.length-1, team);
             System.out.print(":::" + common);
             System.out.println();
