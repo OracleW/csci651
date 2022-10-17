@@ -18,6 +18,7 @@ public class QuestionThree {
         QuestionThree qt = new QuestionThree();
         ArrayList<String[]> teams = qt.formatData(data);
         ArrayList<String> commons = qt.findLongestCommonPrefix(teams);
+//        test
         for (int i = 0; i < teams.size(); i++) {
             System.out.println("Group:" + i);
             for (String s : teams.get(i)) {
@@ -64,7 +65,7 @@ public class QuestionThree {
     }
 
     //        cut the whole string to a series of couples in an arraylist
-    private ArrayList<String[]> formatData(String data) {
+    ArrayList<String[]> formatData(String data) {
         ArrayList<String[]> teams = new ArrayList<String[]>();
         String[] arrTeams = data.split(";");
         for (String s : arrTeams) {
