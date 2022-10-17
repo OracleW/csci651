@@ -1,3 +1,5 @@
+package com.nyit.assginment_1;
+
 public class QuestionFour {
     public static void main(String[] args) {
         QuestionFour qf = new QuestionFour();
