@@ -24,7 +24,7 @@ public class QuestionThree {
             for (String s : teams.get(i)) {
                 System.out.print(s + "/");
             }
-            System.out.print(":::" + commons.get(i));
+            System.out.print("-common:" + commons.get(i));
             System.out.println();
         }
 
@@ -64,8 +64,35 @@ public class QuestionThree {
         return commons;
     }
 
+    public String findLongestCommonPrefix(String[] team) {
+        int minLength = 0;
+        String common = "";
+
+        for (String str : team) { // find out the shortest word
+            if (minLength == 0 || minLength > str.length())
+                minLength = str.length();
+        }
+
+        for (int i = 0; i < minLength; i++) {
+            char c = ' ';
+            for (int j = 0; j < team.length; j++) {
+                if (j == 0)  // record first char
+                    c = team[j].charAt(i);
+                else if (c != team[j].charAt(i)) {
+                    c = ' ';
+                    break;
+                }
+
+            }
+            common = common + c;
+        }
+
+        return common;
+
+    }
+
     //        cut the whole string to a series of couples in an arraylist
-    ArrayList<String[]> formatData(String data) {
+    public ArrayList<String[]> formatData(String data) {
         ArrayList<String[]> teams = new ArrayList<String[]>();
         String[] arrTeams = data.split(";");
         for (String s : arrTeams) {
