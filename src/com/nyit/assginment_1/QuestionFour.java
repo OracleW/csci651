@@ -13,6 +13,7 @@ public class QuestionFour {
             for (String s : team) {
                 System.out.print(s + "/");
             }
+            System.out.println();
             String common = qf.divideUtil(0, team.length - 1, team);
             System.out.println("-common:" + common);
             i++;

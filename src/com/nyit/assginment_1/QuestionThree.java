@@ -24,6 +24,7 @@ public class QuestionThree {
             for (String s : teams.get(i)) {
                 System.out.print(s + "/");
             }
+            System.out.println();
             System.out.print("-common:" + commons.get(i));
             System.out.println();
         }
