@@ -3,7 +3,7 @@ package com.nyit.assginment_1;
 import java.util.ArrayList;
 
 /*
-    Assignment 1, Question 4 (to implement Question 3)
+    Assignment 1, Question 5 (to implement Question 3)
     Longest Common Subsequence (LCS) base on brute force approach
     author: Wenjia Wang
     date: Oct 13, 2022
